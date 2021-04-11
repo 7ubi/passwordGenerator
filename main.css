@@ -1,0 +1,20 @@
+div.inputCheckbox{
+    margin: 5px;
+}
+
+div{
+    margin: 5px;
+}
+
+.container{
+    width:75%;
+    margin: auto;
+    padding-top: 25px;
+    background: lightblue;
+    transform: translate(0%, 50%);
+    border-radius: 25px;
+}
+
+#generate{
+    margin: auto;
+}
