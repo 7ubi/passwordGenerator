@@ -1,5 +1,21 @@
 $(document).ready(function ($){
-    $("#generate").click(function (e){
+
+    generatePassword();
+
+    $(".upper").change(function (){
+        generatePassword()
+    });
+    $(".numbers").change(function (){
+        generatePassword()
+    });
+    $(".specialCharacter").change(function (){
+        generatePassword()
+    });
+    $("#generate").click(function (){
+        generatePassword();
+    })
+
+    function generatePassword (){
         let isUpper = $(".upper").is( ":checked" );
         let isNumber = $(".numbers").is( ":checked" );
         let isSpecial = $(".specialCharacter").is( ":checked" );
@@ -24,9 +40,10 @@ $(document).ready(function ($){
         }
 
         $("#password").val(password);
-    })
+    }
 
-    $("#size").change(function (e){
-        $("#sizeLabel").text($("#size").val());
+    $("#size").change(function (){
+        $("#sizeLabel").text("Length: " + $("#size").val());
+        generatePassword();
     })
 })

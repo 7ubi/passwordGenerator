@@ -36,20 +36,20 @@
 
        <div>
            <input id="size" type="range" min="5" max="25" value="10" class="form-range">
-           <label for="size" id="sizeLabel">10</label>
+           <label for="size" id="sizeLabel">Length: 10</label>
        </div>
+        <label for="password">
+            Password
+        </label>
+        <div class="row">
+            <div class="col-md-8">
 
-       <div>
-           <label for="password">
-               Password
-           </label>
-           <br>
-           <input id="password" class="form-control">
+               <input id="password" class="form-control">
+            </div>
+            <div class="col-md-2">
+                <button id="generate" type="button" class="btn btn-outline-dark">Regenerate</button>
+            </div>
        </div>
-
-        <button id="generate" type="button" class="btn btn-outline-dark">
-            Generate Password
-        </button>
     </div>
 </body>
 </html>
